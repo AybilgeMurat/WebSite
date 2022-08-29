@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tek. Projesi</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main1.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+  <div class="baslik1">
+   
+<header style="padding: unset;">
+    <a id="baslik" href="#">
+    <h1>WEB SİTESİ</h1>
+    </a>
+</header>
+  </div>
+  <div id="menu" style="text-align: center">
+    <ul>
+      <li><a href="index.html" title="Anasayfa">Anasayfa</a></li>
+      <li><a href="icerik.html" title="İçerik">İçerik</a></li>
+      <li><a href="foto.html" title="Fotoğraf Galerisi">Fotoğraf Galerisi</a></li>
+      <li><a href="giris1.html" title="Giriş yap">Giriş Yap</a></li>
+      <li><a href="kayit1.html" title="Kayıt ol">Kayıt Ol</a></li>
+      <li><a href="bizeulasin1.html" title="İletişim">İletişim</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <!-- ORTA ALAN -->
+    <div class="orta_alan">
+      <form method=post action="mailto:ay.aybilge99@hotmail.com">
+
+<h2>KAYIT FORMU</h2>
+
+<table border="2"><tr>
+
+<tr>
+<td><p>Adınız:<th><input type="text" name="adi" size="25" maxlength="20"></th></p></td></tr>
+
+<tr><td><p>Soyadınız:<th><input type="text" name="soyadi" size="25" maxlength="20"></th></p></td></tr>
+
+<tr><td><p>Kullanıcı Adınız:<th><input type="text" name="kullaniciadi" size="25" maxlength="20"></th></p></td></tr>
+
+<tr><td><p>Lütfen şifrenizi giriniz:<th><input type="password" name="sifre" size="25" maxlength="20"></th></p></td></tr>
+
+<tr><td><p>E-Mail Adresi:<th>
+
+<textarea name="adres"rows=1 cols=40></p></td></tr></textarea>
+
+<tr><td><p>Mesleğiniz:
+
+<select name="meslek">
+
+<option>Doktor
+
+<option>Öğretmen
+
+<option>Avukat
+
+<option selected>Mühendis
+
+<option>Öğretim Üyesi
+
+<option>Diğer
+
+</select></p></td></tr>
+
+<tr><td>Bu siteden nasıl haberdar oldunuz?<br>
+
+<select name="haber" multiple size="3">
+
+<option>Arama Motorları aracılığıyla ile
+
+<option>E-Posta İletisi ile
+
+<option>Meslektaşlarım sayesinde
+
+<option>İnternette gezerken
+
+</select><p><br></p></td></tr>
+
+<tr><td><input type="submit"value="Gönder"></td></tr>
+
+<tr><td><input type="reset"value="Formu Temizle"></td></tr>
+
+</tr>
+
+</table>
+
+</form>
+
+
+    </div>
+    <!-- SAĞ MENÜ -->
+    <div class="sag_menu">
+
+      <label>Site İçi Arama</label>
+      <input type="search" name="Aranacak kelime girin." />
+      <input type="button" value="Ara" />
+      <hr>
+          <div class='time-frame'>
+	<div id='tarih-bolumu'></div>
+	<div id='saat-bolumu'></div>
+    </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(document).ready(function() {
+			var interval = setInterval(function() {
+				var momentNow = moment();
+				$('#tarih-bolumu').html(momentNow.format('DD.MM.YYYY'));
+				$('#saat-bolumu').html(momentNow.format('hh:mm:ss'));
+			}, 100);
+		});
+	});
+</script>
+
+      <h3>Başlık</h3>
+      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir
+      matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri
+      endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış..
+
+      <br>
+
+      <hr>
+     
+    </div>
+
+  </div>
+
+  
+
+  <!-- FOOTER -->
+  <footer>
+
+
+
+    <div>
+      <h3>Proje Hakkında</h3>
+      <p>Bu proje <a class="footer_link" href="mailto:ay.aybilge99@hotmail.com" target="_blank">Ayşe Aybilge Murat</a>,<a
+          class="footer_link" href="mailto:dindarberil.@gmail.com" target="_blank">Beril Dindar</a>,<a
+          class="footer_link" href="mailto:zeynep.cetinkaya12@gmail.com" target="_blank">Zeynep Çetinkaya</a> ve <a
+          class="footer_link" href="mailto:alperenkaya1489@gmail.com" target="_blank">Alperen Kaya</a> tarafından
+        geliştilmiştir.</p>
+      <hr>
+      Copyright &copy; 2019
+    </div>
+
+
+  </footer>
+
+</body>
+
+</html>
